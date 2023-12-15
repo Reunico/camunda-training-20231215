@@ -1,0 +1,12 @@
+spring.datasource.url: jdbc:h2:file:./camunda-h2-database
+camunda.bpm.admin-user:
+  id: demo
+  password: demo
+server:
+  port: 8081
+camunda:
+  bpm:
+    default-serialization-format: application/json
+application:
+  website-url: https://faker.reunico.com/faker/api/generate?property=name.findName&property=name.title&property=random.number&property=finance.amount&property=address.countryCode&locale=ru
+  crm-url: https://storage.yandexcloud.net/trainings-crm/application

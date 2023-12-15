@@ -1,0 +1,88 @@
+{
+  "components": [
+    {
+      "label": "Имя клиента",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1th0pjt",
+        "columns": null
+      },
+      "id": "Field_1a70y4y",
+      "key": "fullName",
+      "disabled": true,
+      "readonly": false,
+      "defaultValue": "${ order.fullName }"
+    },
+    {
+      "label": "Род занятий",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_15e54zy",
+        "columns": null
+      },
+      "id": "Field_1v5rq9z",
+      "key": "title",
+      "readonly": false,
+      "defaultValue": "${ order.title }",
+      "disabled": true
+    },
+    {
+      "label": "Номер заказа на сайте",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_15e7l7s",
+        "columns": null
+      },
+      "id": "Field_1choy2s",
+      "key": "number",
+      "defaultValue": "${ order.number }",
+      "readonly": false,
+      "disabled": true
+    },
+    {
+      "label": "Бюджет",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1mxxpdg",
+        "columns": null
+      },
+      "id": "Field_1s8s2id",
+      "key": "amount",
+      "defaultValue": "${ order.amount }",
+      "readonly": false,
+      "disabled": true
+    },
+    {
+      "label": "Адрес",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1vxvw6j",
+        "columns": null
+      },
+      "id": "Field_0003k7m",
+      "key": "countryCode",
+      "defaultValue": "${order.countryCode}",
+      "readonly": false,
+      "disabled": true
+    },
+    {
+      "label": "Заказ подтвержден и передан в обработку",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1yr9dtn",
+        "columns": null
+      },
+      "id": "Field_1j85c43",
+      "key": "isApproved"
+    }
+  ],
+  "type": "default",
+  "id": "orderForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.16.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.20.0",
+  "schemaVersion": 11
+}
