@@ -9,7 +9,7 @@
       },
       "id": "Field_1a70y4y",
       "key": "fullName",
-      "disabled": true,
+      "disabled": false,
       "readonly": false,
       "defaultValue": "${ order.fullName }"
     },
@@ -24,7 +24,7 @@
       "key": "title",
       "readonly": false,
       "defaultValue": "${ order.title }",
-      "disabled": true
+      "disabled": false
     },
     {
       "label": "Номер заказа на сайте",
@@ -37,7 +37,7 @@
       "key": "number",
       "defaultValue": "${ order.number }",
       "readonly": false,
-      "disabled": true
+      "disabled": false
     },
     {
       "label": "Бюджет",
@@ -50,7 +50,7 @@
       "key": "amount",
       "defaultValue": "${ order.amount }",
       "readonly": false,
-      "disabled": true
+      "disabled": false
     },
     {
       "label": "Адрес",
@@ -63,7 +63,7 @@
       "key": "countryCode",
       "defaultValue": "${order.countryCode}",
       "readonly": false,
-      "disabled": true
+      "disabled": false
     },
     {
       "label": "Заказ подтвержден и передан в обработку",

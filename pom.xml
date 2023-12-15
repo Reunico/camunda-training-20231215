@@ -87,6 +87,13 @@
       <artifactId>lombok</artifactId>
       <optional>true</optional>
     </dependency>
+    <dependency>
+      <groupId>org.camunda.community.process_test_coverage</groupId>
+      <artifactId>camunda-process-test-coverage-starter-platform-7</artifactId>
+      <!-- <artifactId>camunda-process-test-coverage-starter-platform-8</artifactId> -->
+      <version>2.1.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>

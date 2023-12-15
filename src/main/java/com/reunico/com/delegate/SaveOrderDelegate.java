@@ -4,6 +4,7 @@ import com.reunico.com.constant.ProcessVariableConstant;
 import com.reunico.com.model.Order;
 import com.reunico.com.service.OrderService;
 import lombok.RequiredArgsConstructor;
+import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Component;
@@ -16,7 +17,12 @@ public class SaveOrderDelegate implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution execution) throws Exception {
-        Order order = orderService.save((Order) execution.getVariable(ProcessVariableConstant.ORDER));
+        Order order = null;
+        try {
+            order = orderService.save((Order) execution.getVariable(ProcessVariableConstant.ORDER));
+        } catch (Exception e) {
+            throw new BpmnError("saveOrderError");
+        }
         execution.setVariable(ProcessVariableConstant.ORDER, order);
         execution.setProcessBusinessKey(order.getId().toString());
     }
